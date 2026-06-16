@@ -1,5 +1,5 @@
 # Hyalophysis
-> Una plataforma híbrida, minimalista y profesional que transforma la apatía y la frustración en impacto global visible para los 17 Objetivos de Desarrollo Sostenible.**
+> Una plataforma híbrida, minimalista y profesional que transforma la apatía y la frustración en impacto global visible para los 17 Objetivos de Desarrollo Sostenible.
 ------
 
 # PROBLEMA:
