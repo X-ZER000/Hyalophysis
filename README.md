@@ -17,3 +17,15 @@
 --Diseñada bajo un enfoque **híbrido entre lo profesional y lo minimalista**, ofrece un entorno de acompañamiento libre de interfaces saturadas, enfocado en datos claros, comunidad multiplataforma y un robusto sistema de gamificación de alto estatus.
 
 ------
+
+# FUNCIONES PRINCIPALES:
+
+-- **Panel Colectivo de Impacto Global (Dashboard de los 17 ODS):** Muestra gráficas dinámicas sobre el estado del mundo respecto a los ODS y un mapa interactivo global. Segmenta los datos por naciones y despliega dos barras de progreso en tiempo real: una que rastrea tu impacto directo dentro de tu país y otra que mide tu aporte al planeta entero. Así se demuestra matemáticamente cómo el esfuerzo individual influye a escala local y global.
+
+-- **Motor de Misiones Personalizadas y Contextuales (Accesibilidad Total):** Adapta y filtra los desafíos diarios y semanales según la situación geográfica, edad y realidad socioeconómica del usuario mediante el perfil de registro. El sistema equilibra las oportunidades reconociendo que un usuario en un entorno rural no enfrenta las mismas facilidades ni problemáticas que uno en una gran ciudad, permitiendo que todos cambien el mundo desde su propia realidad.
+
+-- **Feed de Noticias Positivas y Foro de Acompañamiento:** Un espacio comunitario dividido en dos pilares esenciales: el *Mini-Noticiero*, un muro libre de catástrofes enfocado puramente en avances científicos, logros de los ODS y éxitos de la comunidad; y el *Foro Minimalista*, un entorno limpio donde los usuarios crean micro-comunidades para organizarse en campañas locales o simplemente recibir apoyo emocional mutuo para mitigar la eco-ansiedad.
+
+-- **"The Global Wrapped" (Celebración y Resumen Interactivo de Fin de Año):** Al terminar el ciclo anual, la plataforma despliega una animación cinemática especial y personalizada. A nivel macro, rinde homenaje y visibiliza a los países, empresas y ciudadanos que lideraron el cambio. A nivel micro, presenta una radiografía interactiva del crecimiento del usuario, detallando sus misiones completadas, los ODS en los que se enfocó y su impacto métrica por métrica durante esos 12 meses.
+
+-- **Sistema de Alto Estatus y Certificación Global (Insignias ODS):** Evalúa los logros del usuario y otorga reconocimientos de alta reputación como la insignia `ODS-Global-HERO` (para empresas, ONGs y celebridades que cumplen metas estrictas de sostenibilidad), la distinción `ODS-Country-Legend` (para gobiernos que destaquen por su impacto comunitario) y la *Insignia Ciudadana Anual* (otorgada por un año a los ciudadanos que completen las misiones más difíciles del mundo, sin importar su edad).
