@@ -35,10 +35,17 @@
 # ARQUITECTURA Y STACK TECNOLÓGICO:
 
 -- **Python 3.x (Ecosistema Central):** El cerebro de la aplicación encargado de procesar la lógica de negocio, la asignación contextual de misiones y la segmentación de datos.
+
 -- **Streamlit:** Framework web principal que actúa como plantilla de trabajo automatizada para renderizar la interfaz y conectar los datos en tiempo real.
+
 -- **SQLite:** Base de datos relacional ligera integrada nativamente en Python para la persistencia local de usuarios, misiones e insignias.
+
 -- **Pandas:** Biblioteca de manipulación de datos utilizada para estructurar, filtrar y procesar las métricas de impacto socioeconómico y ambiental de los ODS.
+
 -- **Plotly:** Motor de gráficos interactivos encargado de desplegar las métricas macro mundiales de forma dinámica y profesional.
+
 -- **Folium:** Integración de mapas geoespaciales interactivos para la visualización de campañas y estados de los ODS por país.
+
 -- **Lottie:** Sistema de animaciones vectoriales basadas en JSON para dar vida al "Global Wrapped" de fin de año y al Modo Infantil sin sobrecargar la aplicación.
+
 -- **HTML5 / CSS3 Personalizado:** Inyecciones de diseño estético para estilizar el foro, el mini-noticiero y las tarjetas de misiones minimalistas.
