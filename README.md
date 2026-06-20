@@ -29,3 +29,16 @@
 -- **"The Global Wrapped" (Celebración y Resumen Interactivo de Fin de Año):** Al terminar el ciclo anual, la plataforma despliega una animación cinemática especial y personalizada. A nivel macro, rinde homenaje y visibiliza a los países, empresas y ciudadanos que lideraron el cambio. A nivel micro, presenta una radiografía interactiva del crecimiento del usuario, detallando sus misiones completadas, los ODS en los que se enfocó y su impacto métrica por métrica durante esos 12 meses.
 
 -- **Sistema de Alto Estatus y Certificación Global (Insignias ODS):** Evalúa los logros del usuario y otorga reconocimientos de alta reputación como la insignia `ODS-Global-HERO` (para empresas, ONGs y celebridades que cumplen metas estrictas de sostenibilidad), la distinción `ODS-Country-Legend` (para gobiernos que destaquen por su impacto comunitario) y la *Insignia Ciudadana Anual* (otorgada por un año a los ciudadanos que completen las misiones más difíciles del mundo, sin importar su edad).
+
+------
+
+# ARQUITECTURA Y STACK TECNOLÓGICO:
+
+-- **Python 3.x (Ecosistema Central):** El cerebro de la aplicación encargado de procesar la lógica de negocio, la asignación contextual de misiones y la segmentación de datos.
+-- **Streamlit:** Framework web principal que actúa como plantilla de trabajo automatizada para renderizar la interfaz y conectar los datos en tiempo real.
+-- **SQLite:** Base de datos relacional ligera integrada nativamente en Python para la persistencia local de usuarios, misiones e insignias.
+-- **Pandas:** Biblioteca de manipulación de datos utilizada para estructurar, filtrar y procesar las métricas de impacto socioeconómico y ambiental de los ODS.
+-- **Plotly:** Motor de gráficos interactivos encargado de desplegar las métricas macro mundiales de forma dinámica y profesional.
+-- **Folium:** Integración de mapas geoespaciales interactivos para la visualización de campañas y estados de los ODS por país.
+-- **Lottie:** Sistema de animaciones vectoriales basadas en JSON para dar vida al "Global Wrapped" de fin de año y al Modo Infantil sin sobrecargar la aplicación.
+-- **HTML5 / CSS3 Personalizado:** Inyecciones de diseño estético para estilizar el foro, el mini-noticiero y las tarjetas de misiones minimalistas.
