@@ -1,0 +1,19 @@
+# --- MOTOR WEB PRINCIPAL ---
+streamlit>=1.35.0
+
+# --- PROCESAMIENTO DE DATOS Y GRÁFICAS ---
+pandas>=2.2.0
+plotly>=5.20.0
+
+# --- MAPAS GEOESPACIALES ---
+folium>=0.16.0
+streamlit-folium>=0.18.0
+
+# --- ANIMACIONES LOTTIE ---
+streamlit-lottie>=0.0.5
+
+# Nota: SQLite viene integrado de forma nativa en Python, 
+# por lo que no requiere una librería externa en este archivo.
+
+#Como instalarlo:
+#pip install -r requirements.txt
