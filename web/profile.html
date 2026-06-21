@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyalophysis — Perfil del Agente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Estilos específicos para la hoja de perfil */
+        .avatar-profile-glow {
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.3);
+            border: 3px solid var(--accent-cyan);
+            background: linear-gradient(135deg, #151c34, #0d1429);
+        }
+        .stat-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .badge-grid-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            transition: all 0.2s;
+        }
+        .badge-grid-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="aurora-bg"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass container-fluid px-4 py-3 mt-3">
+        <a class="navbar-brand fw-bold tracking-tight d-flex align-items-center" href="home.html">
+            <span class="brand-accent-h me-2">H</span> HYALOPHYSIS
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="missions.html">Missions</a></li>
+                <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="junior.html">Junior ZONE</a></li>
+                <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link active" href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        
+        <div class="row g-4">
+            
+            <aside class="col-12 col-lg-4">
+                <div class="card-glass p-4 text-center">
+                    <div class="rounded-circle avatar-profile-glow d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 100px; height: 100px;">
+                        <i class="bi bi-person-badge fs-1 text-accent"></i>
+                    </div>
+                    <h3 class="h5 fw-bold text-white mb-1">Agente de Cambio #7912</h3>
+                    <p class="small text-accent mb-3">Eco-Activista Plata</p>
+                    
+                    <div class="d-flex justify-content-center gap-2 mb-4">
+                        <span class="badge bg-dark-custom text-muted-custom border border-secondary-subtle py-1 px-2" style="font-size: 0.75rem;"><i class="bi bi-geo-alt me-1"></i>Grecia, CR</span>
+                        <span class="badge bg-dark-custom text-muted-custom border border-secondary-subtle py-1 px-2" style="font-size: 0.75rem;"><i class="bi bi-building me-1"></i>Urbano</span>
+                    </div>
+
+                    <hr class="text-muted my-3">
+
+                    <div class="row g-2 text-start mt-3">
+                        <div class="col-6">
+                            <div class="stat-box p-3">
+                                <small class="text-muted-custom d-block mb-1 style-mini" style="font-size: 0.7rem;">MISIONES</small>
+                                <span class="fs-5 fw-bold text-white">34</span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-box p-3">
+                                <small class="text-muted-custom d-block mb-1 style-mini" style="font-size: 0.7rem;">TOTAL PTS</small>
+                                <span class="fs-5 fw-bold text-accent">320</span>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="stat-box p-3 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <small class="text-muted-custom d-block mb-1 style-mini" style="font-size: 0.7rem;">CO₂ EVITADO HISTÓRICO</small>
+                                    <span class="fs-6 fw-bold text-success">-142.50 kg</span>
+                                </div>
+                                <i class="bi bi-tree text-success fs-4"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="col-12 col-lg-8">
+                
+                <div class="card-glass p-4 mb-4">
+                    <h4 class="h6 text-uppercase tracking-wider text-white fw-bold mb-4"><i class="bi bi-award me-2 text-accent"></i>Vitrina de Reconocimientos</h4>
+                    
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <div class="badge-grid-item p-3 d-flex align-items-center gap-3">
+                                <i class="bi bi-shield-check text-warning fs-3"></i>
+                                <div>
+                                    <div class="fw-bold text-white small">Insignia Ciudadana Anual</div>
+                                    <p class="text-muted-custom mb-0 style-mini" style="font-size: 0.75rem;">Otorgada por consistencia en la plataforma.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="badge-grid-item p-3 d-flex align-items-center gap-3">
+                                <i class="bi bi-lightning-fill text-info fs-3"></i>
+                                <div>
+                                    <div class="fw-bold text-white small">Eco-Eficiente Eficaz <span class="text-info" style="font-size: 0.7rem;">[JZ]</span></div>
+                                    <p class="text-muted-custom mb-0 style-mini" style="font-size: 0.75rem;">Sincronizado desde el historial Junior.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-glass p-4">
+                    <h4 class="h6 text-uppercase tracking-wider text-white fw-bold mb-4"><i class="bi bi-graph-up me-2 text-accent"></i>Aporte al Balance de los ODS</h4>
+                    
+                    <div class="d-flex flex-column gap-3">
+                        <div>
+                            <div class="d-flex justify-content-between small mb-1">
+                                <span class="text-light-custom"><span class="fw-bold text-success">ODS 13</span> Acción Climática</span>
+                                <span class="text-muted-custom">85% Completado</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: rgba(255,255,255,0.05);">
+                                <div class="progress-bar" role="progressbar" style="width: 85%; background-color: var(--ods-13);" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex justify-content-between small mb-1">
+                                <span class="text-light-custom"><span class="fw-bold text-danger">ODS 4</span> Educación de Calidad</span>
+                                <span class="text-muted-custom">92% Completado</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: rgba(255,255,255,0.05);">
+                                <div class="progress-bar" role="progressbar" style="width: 92%; background-color: var(--ods-4);" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="d-flex justify-content-between small mb-1">
+                                <span class="text-light-custom"><span class="fw-bold" style="color: var(--ods-10)">ODS 10</span> Reducción de Desigualdades</span>
+                                <span class="text-muted-custom">68% Completado</span>
+                            </div>
+                            <div class="progress" style="height: 6px; background: rgba(255,255,255,0.05);">
+                                <div class="progress-bar" role="progressbar" style="width: 68%; background-color: var(--ods-10);" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

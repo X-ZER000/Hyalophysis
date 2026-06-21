@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyalophysis — Motor de Misiones Contextuales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Estilos específicos para el módulo de misiones */
+        .mission-card {
+            transition: transform 0.2s, border-color 0.2s;
+            background: rgba(255, 255, 255, 0.03);
+        }
+        .mission-card:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .btn-claim {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--glass-border);
+            color: #FFF;
+            font-size: 0.85rem;
+        }
+        .btn-claim:hover {
+            background: var(--accent-green);
+            color: var(--bg-dark);
+            border-color: var(--accent-green);
+            box-shadow: 0 0 15px rgba(56, 239, 125, 0.4);
+        }
+        .filter-badge-active {
+            background: rgba(0, 242, 254, 0.1);
+            border: 1px solid rgba(0, 242, 254, 0.3);
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            padding: 6px 14px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="aurora-bg"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass container-fluid px-4 py-3 mt-3">
+        <a class="navbar-brand fw-bold tracking-tight d-flex align-items-center" href="home.html">
+            <span class="brand-accent-h me-2">H</span> HYALOPHYSIS
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link active" href="missions.html">Missions</a></li>
+                <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="junior.html">Junior ZONE</a></li>
+                <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        
+        <header class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-5">
+            <div>
+                <h2 class="fw-bold tracking-tight mb-1">Misiones Contextuales</h2>
+                <p class="text-secondary mb-0">Desafíos adaptados matemáticamente a tu entorno geográfico y perfil demográfico.</p>
+            </div>
+            <div class="d-flex gap-2 align-items-center self-start">
+                <span class="filter-badge-active"><i class="bi bi-geo-alt me-1"></i> Urbano</span>
+                <span class="filter-badge-active"><i class="bi bi-person me-1"></i> 18-30 años</span>
+            </div>
+        </header>
+
+        <div class="row g-4">
+            
+            <section class="col-12 col-lg-8">
+                <div class="d-flex align-items-center gap-2 mb-4">
+                    <i class="bi bi-lightning-charge-fill text-warning"></i>
+                    <h3 class="h5 fw-bold mb-0 text-white">Desafíos Diarios</h3>
+                </div>
+
+                <div class="d-flex flex-column gap-3">
+                    <div class="card-glass mission-card p-4 border-ods-13">
+                        <div class="d-flex justify-content-between align-items-start gap-3">
+                            <div class="d-flex gap-3">
+                                <div class="ods-icon-box bg-ods-13 mt-1"><i class="bi bi-cloud-haze2"></i></div>
+                                <div>
+                                    <span class="badge bg-dark-custom text-success border border-success-subtle mb-2" style="font-size: 0.7rem;">ODS 13 — Acción Climática</span>
+                                    <h4 class="h6 fw-bold text-white mb-1">Desconexión Vampiro Estricta</h4>
+                                    <p class="small text-muted-custom mb-0">Desconecta todos los cargadores, routers secundarios y electrodomésticos en modo standby antes de dormir.</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-claim fw-semibold px-3 py-2 text-nowrap" onclick="completarMision(50)">
+                                +50 pts
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card-glass mission-card p-4 border-ods-10">
+                        <div class="d-flex justify-content-between align-items-start gap-3">
+                            <div class="d-flex gap-3">
+                                <div class="ods-icon-box bg-ods-10 mt-1"><i class="bi bi-arrow-down-up"></i></div>
+                                <div>
+                                    <span class="badge bg-dark-custom text-danger border border-danger-subtle mb-2" style="font-size: 0.7rem;">ODS 10 — Reducción Desigualdad</span>
+                                    <h4 class="h6 fw-bold text-white mb-1">Consumo de Proximidad Microeconómico</h4>
+                                    <p class="small text-muted-custom mb-0">Realiza tus compras del día exclusivamente en comercios locales independientes o de barrio en lugar de grandes cadenas corporativas.</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-claim fw-semibold px-3 py-2 text-nowrap" onclick="completarMision(70)">
+                                +70 pts
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-2 mt-5 mb-4">
+                    <i class="bi bi-calendar-week-fill text-info"></i>
+                    <h3 class="h5 fw-bold mb-0 text-white">Campañas Semanales Críticas</h3>
+                </div>
+
+                <div class="card-glass mission-card p-4 border-ods-4">
+                    <div class="d-flex justify-content-between align-items-start gap-3">
+                        <div class="d-flex gap-3">
+                            <div class="ods-icon-box bg-ods-4 mt-1"><i class="bi bi-book"></i></div>
+                            <div>
+                                <span class="badge bg-dark-custom text-warning border border-warning-subtle mb-2" style="font-size: 0.7rem;">ODS 4 — Educación de Calidad</span>
+                                <h4 class="h6 fw-bold text-white mb-1">Curaduría de Contenido Open-Source</h4>
+                                <p class="small text-muted-custom mb-0">Dedica 2 horas semanales a documentar, corregir o agregar información educativa de acceso público en plataformas de aprendizaje o repositorios comunitarios libres.</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-claim fw-semibold px-3 py-2 text-nowrap" onclick="completarMision(150)">
+                            +150 pts
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="col-12 col-lg-4">
+                <div class="card-glass p-4 sticky-top" style="top: 110px;">
+                    <h3 class="h6 text-uppercase tracking-wider text-white fw-bold mb-4">Progreso de Recompensas</h3>
+                    
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between text-muted-custom small mb-2">
+                            <span>Balance Actual</span>
+                            <span class="text-white fw-bold" id="puntos-display">320 pts</span>
+                        </div>
+                        <div class="progress-container-fluid">
+                            <div class="progress-bar-fluid-organic" id="puntos-progreso" style="width: 64%;"></div>
+                        </div>
+                        <div class="text-end text-muted-custom mt-2" style="font-size: 0.75rem;">
+                            Faltan <span id="puntos-restantes">180</span> pts para el rango Oro
+                        </div>
+                    </div>
+
+                    <hr class="text-muted mb-4">
+
+                    <h4 class="h6 text-uppercase tracking-wider text-white fw-bold mb-3">Historial de Impacto Reciente</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-3 table-mini text-muted-custom ps-1" id="historial-lista">
+                        <li class="d-flex justify-content-between">
+                            <span><i class="bi bi-check-circle text-success me-2"></i>Auditoría de Residuos</span>
+                            <span class="text-white fw-medium">+60 pts</span>
+                        </li>
+                        <li class="d-flex justify-content-between">
+                            <span><i class="bi bi-check-circle text-success me-2"></i>Movilidad Cero Emisiones</span>
+                            <span class="text-white fw-medium">+40 pts</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="impactToast" class="toast card-glass border-success text-white" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-transparent text-white border-bottom-0 p-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                <strong class="me-auto">¡Impacto Calculado!</strong>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body pt-0 px-2 pb-2 small text-light-custom">
+                Tus micro-acciones han sumado correctamente al vector matemático global.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let puntosActuales = 320;
+        const metaSiguiente = 500;
+
+        function completarMision(puntos) {
+            // Actualizar puntos
+            puntosActuales += puntos;
+            document.getElementById('puntos-display').innerText = puntosActuales + ' pts';
+            
+            // Actualizar barra e indicadores matemáticos
+            let porcentaje = Math.min((puntosActuales / metaSiguiente) * 100, 100);
+            document.getElementById('puntos-progreso').style.width = porcentaje + '%';
+            
+            let faltantes = Math.max(metaSiguiente - puntosActuales, 0);
+            document.getElementById('puntos-restantes').innerText = faltantes;
+
+            // Mostrar feedback con Toast de Bootstrap
+            const toastEl = document.getElementById('impactToast');
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

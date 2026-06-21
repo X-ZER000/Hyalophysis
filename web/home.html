@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyalophysis — Dashboard de Impacto Global</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="aurora-bg"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass container-fluid px-4 py-3 mt-3">
+        <a class="navbar-brand fw-bold tracking-tight d-flex align-items-center" href="#">
+            <span class="brand-accent-h me-2">H</span> HYALOPHYSIS
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="missions.html">Missions</a></li>
+                <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                <li class="nav-item"><a class="nav-link" href="junior.html">Junior ZONE</a></li>
+                <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-4 mt-4">
+        
+        <section class="row g-4 mb-4">
+            <div class="col-12 col-lg-6">
+                <div class="card-glass p-3 position-relative">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-uppercase tracking-wider text-muted-custom small">
+                            <strong class="text-white">Nacional Impact:</strong> Costa Rica (Alajuela/Grecia)
+                        </span>
+                        <a href="#" class="small text-accent text-decoration-none">Detail by Region <i class="bi bi-chevron-down"></i></a>
+                    </div>
+                    <div class="progress-container-fluid">
+                        <div class="progress-bar-fluid-organic" style="width: 71%;">
+                            <span class="progress-label">71%</span>
+                        </div>
+                    </div>
+                    <div class="caption-metric mt-2 text-muted-custom small">
+                        Positive impact against pollution
+                    </div>
+                    <div class="metric-tooltip mt-1">
+                        <i class="bi bi-arrow-down-short text-success"></i> Grecia CO₂ reduction: -5% this week!
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="card-glass p-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="text-uppercase tracking-wider text-muted-custom small">
+                            <strong class="text-white">Global Impact:</strong> Earth
+                        </span>
+                        <span class="text-white fw-bold small">58%</span>
+                    </div>
+                    <div class="progress-container-fluid">
+                        <div class="progress-bar-fluid-organic global-bar" style="width: 58%;"></div>
+                    </div>
+                    <div class="d-flex justify-content-end mt-2">
+                        <span class="communal-streak-badge small">
+                            Communal streaks: Grecia CO₂ reduction: -5% this week!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row g-4 mb-4">
+            <div class="col-12 col-lg-6">
+                <div class="card-glass p-4 position-relative card-map-container" style="min-height: 380px;">
+                    <div class="position-absolute top-0 end-0 m-3 d-flex flex-column gap-2 z-index-2">
+                        <button class="btn btn-map-control btn-sm active"><i class="bi bi-geo-alt-fill me-1"></i> User Country</button>
+                        <button class="btn btn-map-control btn-sm"><i class="bi bi-globe me-1"></i> World Map</button>
+                    </div>
+
+                    <div class="map-label-card position-absolute m-card-1">
+                        <div class="fw-bold">Grecia</div>
+                        <div class="text-success small">-55%</div>
+                        <div class="text-muted-custom table-mini">Micro-projects</div>
+                    </div>
+
+                    <div class="map-label-card position-absolute m-card-2">
+                        <div class="fw-bold">San José</div>
+                        <div class="text-success small">+16%</div>
+                        <div class="text-muted-custom table-mini">Grecia</div>
+                        <div class="text-muted-custom table-mini">San José</div>
+                        <div class="text-muted-custom table-mini">Micro-projects</div>
+                    </div>
+
+                    <div class="map-silhouette">
+                        <div class="heatmap-glow core-grecia"></div>
+                        <div class="heatmap-glow core-sanjose"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="card-glass p-0 overflow-hidden position-relative card-video-container" style="min-height: 380px;">
+                    <div class="p-3 d-flex justify-content-between align-items-center position-absolute w-100 top-0 z-index-2 text-white video-gradient-top">
+                        <div class="d-flex align-items-center">
+                            <span class="brand-accent-h-sm me-2">H</span>
+                            <span class="fw-medium small">The Global Wrapped (2024)</span>
+                        </div>
+                        <div class="d-flex gap-3 small">
+                            <span><i class="bi bi-clock me-1"></i> Watch later</span>
+                            <span><i class="bi bi-share me-1"></i> Share</span>
+                        </div>
+                    </div>
+
+                    <div class="video-interactive-overlay position-absolute start-50 top-50 translate-middle p-4 text-white">
+                        <h4 class="h6 fw-bold mb-2">Welcome, new changemaker!</h4>
+                        <p class="small text-light-custom mb-3">Your first steps toward global impact start here. (<a href="#" class="text-accent text-decoration-none">View Summary</a>)</p>
+                        <button class="btn btn-accent-action btn-sm w-100 fw-semibold">
+                            <i class="bi bi-rocket-takeoff-fill me-2"></i>Start your journey!
+                        </button>
+                    </div>
+
+                    <div class="video-poster-simulation">
+                        <div class="earth-sphere"></div>
+                    </div>
+
+                    <div class="video-controls-bottom position-absolute bottom-0 w-100 p-3 z-index-2">
+                        <div class="progress video-progress mb-2" style="height: 4px;">
+                            <div class="progress-bar bg-danger" style="width: 38%;"></div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center text-white small">
+                            <div class="d-flex gap-3 align-items-center">
+                                <i class="bi bi-play-fill fs-5"></i>
+                                <i class="bi bi-volume-up fs-5"></i>
+                                <span>0:00 / 2:27</span>
+                            </div>
+                            <div class="d-flex gap-3 fs-6">
+                                <i class="bi bi-badge-cc"></i>
+                                <i class="bi bi-gear"></i>
+                                <i class="bi bi-fullscreen"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-4">
+            <h3 class="h6 text-uppercase tracking-wider text-white mb-3 fw-bold">ODS Impact:</h3>
+            <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-slider-arrow"><i class="bi bi-chevron-left"></i></button>
+                
+                <div class="row g-3 w-100 flex-nowrap overflow-hidden">
+                    <div class="col-6 col-md-3 col-lg-2-4">
+                        <div class="ods-card border-ods-13">
+                            <div class="ods-icon-box bg-ods-13"><i class="bi bi-globe-americas"></i></div>
+                            <div class="ods-meta">
+                                <div class="fw-bold text-white small">ODS 13</div>
+                                <div class="text-muted-custom table-mini">Green, 85%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2-4">
+                        <div class="ods-card border-ods-4 position-relative">
+                            <i class="bi bi-fire fire-badge-orange position-absolute"></i>
+                            <div class="ods-icon-box bg-ods-4"><i class="bi bi-book"></i></div>
+                            <div class="ods-meta">
+                                <div class="fw-bold text-white small">ODS 4</div>
+                                <div class="text-muted-custom table-mini">Orange, 92%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2-4">
+                        <div class="ods-card border-ods-10 active-focus position-relative">
+                            <i class="bi bi-fire fire-badge-red position-absolute"></i>
+                            <div class="ods-icon-box bg-ods-10"><i class="bi bi-arrow-down-up"></i></div>
+                            <div class="ods-meta">
+                                <div class="fw-bold text-white small">ODS 10</div>
+                                <div class="text-muted-custom table-mini">Red, 68%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2-4">
+                        <div class="ods-card border-ods-8">
+                            <div class="ods-icon-box bg-ods-8"><i class="bi bi-graph-up-arrow"></i></div>
+                            <div class="ods-meta">
+                                <div class="fw-bold text-white small">ODS 8</div>
+                                <div class="text-muted-custom table-mini">Blue, 74%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 col-lg-2-4">
+                        <div class="ods-card border-ods-1 position-relative">
+                            <i class="bi bi-sparkles sparkle-badge position-absolute"></i>
+                            <div class="ods-icon-box bg-ods-1"><i class="bi bi-people"></i></div>
+                            <div class="ods-meta">
+                                <div class="fw-bold text-white small">ODS 1</div>
+                                <div class="text-muted-custom table-mini">Purple, 81%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-slider-arrow"><i class="bi bi-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="card-glass p-4 mb-4">
+            <div class="row g-4">
+                <div class="col-12 col-md-7 border-end-custom">
+                    <h4 class="h6 text-uppercase tracking-wider text-white fw-bold mb-3">Positive News Feed</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="news-item d-flex align-items-start gap-2">
+                            <i class="bi bi-sparkles text-warning mt-1"></i>
+                            <div>
+                                <span class="fw-bold text-white">Science:</span> Breakthrough in plastic degradation (Nature).
+                                <span class="badge bg-dark-custom ms-2 text-muted-custom">Click to headline to expand</span>
+                            </div>
+                        </div>
+                        <div class="news-item d-flex align-items-start gap-2">
+                            <i class="bi bi-trophy-fill text-warning mt-1"></i>
+                            <div>
+                                <span class="fw-bold text-white">Community:</span> Alajuela achieves 15% carbon reduction (The Tico Times).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="h6 text-uppercase tracking-wider text-white fw-bold mb-0">Latest Achievements</h4>
+                        <i class="bi bi-award-fill text-accent fs-5"></i>
+                    </div>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-light-custom small ps-1">
+                        <li class="d-flex align-items-center gap-2">
+                            <div class="bullet-dot"></div> Alajuela achieves first Development (RDG)
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <div class="bullet-dot"></div> Community: Alajuela achieves 15% carbon
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

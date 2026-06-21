@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyalophysis — Junior ZONE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Estilos específicos y efectos neón para la Junior ZONE */
+        .junior-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .junior-card:hover {
+            transform: translateY(-4px);
+        }
+        
+        /* Glow Effects correspondientes a los rangos de la imagen */
+        .glow-avatar-apprentice {
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+            border: 2px solid var(--accent-cyan);
+        }
+        .glow-card-green {
+            border-color: rgba(56, 239, 125, 0.3) !important;
+            box-shadow: 0 4px 20px rgba(56, 239, 125, 0.15);
+        }
+        .glow-card-yellow {
+            border-color: rgba(255, 193, 7, 0.3) !important;
+            box-shadow: 0 4px 20px rgba(255, 193, 7, 0.15);
+        }
+        .glow-card-purple {
+            border-color: rgba(155, 81, 224, 0.3) !important;
+            box-shadow: 0 4px 20px rgba(155, 81, 224, 0.15);
+        }
+
+        .level-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="aurora-bg"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-glass container-fluid px-4 py-3 mt-3">
+        <a class="navbar-brand fw-bold tracking-tight d-flex align-items-center" href="home.html">
+            <span class="brand-accent-h me-2">H</span> HYALOPHYSIS
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="home.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="missions.html">Missions</a></li>
+                <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+                <li class="nav-item"><a class="nav-link active" href="junior.html">Junior ZONE</a></li>
+                <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        
+        <header class="card-glass p-4 mb-5 d-flex flex-column flex-md-row align-items-center justify-content-between gap-4">
+            <div class="d-flex align-items-center gap-3 flex-column flex-md-row text-center text-md-start">
+                <div class="rounded-circle bg-dark d-flex align-items-center justify-content-center glow-avatar-apprentice" style="width: 70px; height: 70px;">
+                    <i class="bi bi-robot fs-2 text-info"></i>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center gap-2 justify-content-center justify-content-md-start">
+                        <h2 class="h4 fw-bold text-white mb-0">¡Hola, Guardián Junior!</h2>
+                        <span class="level-badge text-info border border-info-subtle">Nivel 4</span>
+                    </div>
+                    <p class="small text-muted-custom mb-0 mt-1">Rango actual: <strong>Aprendiz de la Biósfera</strong></p>
+                </div>
+            </div>
+            
+            <div class="w-100 max-width-xs" style="max-width: 320px;">
+                <div class="d-flex justify-content-between text-muted-custom small mb-1">
+                    <span>Siguiente rango: Guardián Avanzado</span>
+                    <span class="text-white fw-bold">80%</span>
+                </div>
+                <div class="progress-container-fluid">
+                    <div class="progress-bar-fluid-organic global-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+        </header>
+
+        <div class="mb-4">
+            <h3 class="h5 fw-bold text-white mb-1"><i class="bi bi-controller me-2 text-warning"></i>Tus Aventuras de Impacto</h3>
+            <p class="small text-muted-custom">Completa estas micro-misiones dinámicas para desbloquear insignias y restaurar el balance.</p>
+        </div>
+
+        <section class="row g-4">
+            
+            <div class="col-12 col-md-4">
+                <div class="junior-card p-4 h-100 d-flex flex-column justify-content-between glow-card-green">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="ods-icon-box bg-success"><i class="bi bi-tree"></i></div>
+                            <span class="badge bg-dark-custom text-success border border-success-subtle">ODS 15</span>
+                        </div>
+                        <h4 class="h6 fw-bold text-white mb-2">Compostero Casero Micro</h4>
+                        <p class="small text-muted-custom mb-0">Separa las cáscaras de frutas o restos de vegetales del almuerzo de hoy en un contenedor orgánico separado.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary-subtle d-flex justify-content-between align-items-center">
+                        <span class="text-success small fw-bold"><i class="bi bi-star-fill me-1"></i>+40 XP</span>
+                        <button class="btn btn-accent-action btn-sm px-3" onclick="alert('¡Aventura iniciada! Registra tu impacto cuando completes el desafío.')">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="junior-card p-4 h-100 d-flex flex-column justify-content-between glow-card-yellow">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="ods-icon-box bg-warning text-dark"><i class="bi bi-recycle"></i></div>
+                            <span class="badge bg-dark-custom text-warning border border-warning-subtle">ODS 12</span>
+                        </div>
+                        <h4 class="h6 fw-bold text-white mb-2">Cazador de Plásticos Escondidos</h4>
+                        <p class="small text-muted-custom mb-0">Encuentra 5 botellas o envases de plástico de un solo uso en casa y clasifícalos correctamente para el reciclaje local.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary-subtle d-flex justify-content-between align-items-center">
+                        <span class="text-warning small fw-bold"><i class="bi bi-star-fill me-1"></i>+50 XP</span>
+                        <button class="btn btn-accent-action btn-sm px-3" onclick="alert('¡Aventura iniciada!')">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="junior-card p-4 h-100 d-flex flex-column justify-content-between glow-card-purple">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div class="ods-icon-box style-blue" style="background-color: #56CCF2;"><i class="bi bi-droplet"></i></div>
+                            <span class="badge bg-dark-custom style-blue border border-info-subtle" style="color: #56CCF2;">ODS 6</span>
+                        </div>
+                        <h4 class="h6 fw-bold text-white mb-2">El Guardián del Grifo</h4>
+                        <p class="small text-muted-custom mb-0">Asegúrate de cerrar el grifo por completo mientras te cepillas los dientes o lavas los platos. ¡Cero desperdicios hoy!</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-top border-secondary-subtle d-flex justify-content-between align-items-center">
+                        <span class="style-blue small fw-bold" style="color: #56CCF2;"><i class="bi bi-star-fill me-1"></i>+30 XP</span>
+                        <button class="btn btn-accent-action btn-sm px-3" onclick="alert('¡Aventura iniciada!')">Iniciar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card-glass p-4 mt-5">
+            <h4 class="h6 text-uppercase tracking-wider text-white fw-bold mb-3"><i class="bi bi-trophy text-warning me-2"></i>Tus Insignias de Guardián</h4>
+            <div class="d-flex flex-wrap gap-3">
+                <div class="bg-dark-custom border border-secondary-subtle rounded p-3 text-center d-flex align-items-center gap-2" style="max-width: 240px;">
+                    <i class="bi bi-shield-fill-check text-success fs-4"></i>
+                    <div class="text-start">
+                        <div class="fw-bold text-white small">Defensor del Bosque</div>
+                        <div class="text-muted-custom" style="font-size: 0.7rem;">Por completar 5 misiones ODS 15</div>
+                    </div>
+                </div>
+                <div class="bg-dark-custom border border-secondary-subtle rounded p-3 text-center d-flex align-items-center gap-2" style="max-width: 240px;">
+                    <i class="bi bi-lightning-fill text-warning fs-4"></i>
+                    <div class="text-start">
+                        <div class="fw-bold text-white small">Eco-Eficiente Eficaz</div>
+                        <div class="text-muted-custom" style="font-size: 0.7rem;">Por ahorrar energía 3 días seguidos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
